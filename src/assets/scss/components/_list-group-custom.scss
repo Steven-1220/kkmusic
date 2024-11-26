@@ -1,0 +1,9 @@
+.list-group-flush > .list-group-item:last-child {
+  border-bottom-width: var(--#{$prefix}border-width);
+}
+
+.list-group-item {
+  &:hover {
+    background-color: $gray-300;
+  }
+}
