@@ -46,12 +46,12 @@
 
 ### 首頁
 
-<img src="https://raw.githubusercontent.com/Steven-1220/kkmusic/refs/heads/screenshots/screenshots/kkmusic-01.png"  width="700" height="1000">
+![首頁](https://raw.githubusercontent.com/Steven-1220/kkmusic/refs/heads/screenshots/screenshots/kkmusic-01.png)
 
 ### 熱門歌曲 (YouTube 播放)
 
-<img src="https://raw.githubusercontent.com/Steven-1220/kkmusic/refs/heads/screenshots/screenshots/kkmusic-01.png"  width="700" height="1000">
+![熱門歌曲](https://raw.githubusercontent.com/Steven-1220/kkmusic/refs/heads/screenshots/screenshots/kkmusic-04.png)
 
 ### 搜尋畫面
 
-<img src="https://raw.githubusercontent.com/Steven-1220/kkmusic/refs/heads/screenshots/screenshots/kkmusic-05.png"  width="700" height="1000">
+![搜尋畫面](https://raw.githubusercontent.com/Steven-1220/kkmusic/refs/heads/screenshots/screenshots/kkmusic-05.png)
