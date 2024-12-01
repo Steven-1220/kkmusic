@@ -27,9 +27,9 @@
 - KKBOX OAuth 2.0 Token API
 - YouTube Data API
 - Bootstrap5
-- JavaScript
+- JavaScript(含ES6)
 - SCSS
-- RWD
+- RWD 響應式網頁
 
 ## 使用插件
 
