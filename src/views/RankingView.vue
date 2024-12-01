@@ -197,7 +197,7 @@ onBeforeRouteLeave(() => {
                 {{ index + 1 }}
               </h4>
               <div
-                class="ranking-single-info d-flex align-items-center ms-lg-5 ms-3"
+                class="ranking-single-info w-100 d-flex align-items-center ms-lg-5 ms-3"
               >
                 <img
                   :src="item.album.artist.images[0].url"

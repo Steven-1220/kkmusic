@@ -182,7 +182,7 @@ onMounted(async () => {
                     {{ index + 1 }}
                   </h4>
                   <div
-                    class="release-albums-info d-flex align-items-center ms-lg-5 ms-3"
+                    class="release-albums-info w-100 d-flex align-items-center ms-lg-5 ms-3"
                   >
                     <img :src="item.images[0].url" :alt="item.name" />
                     <div class="ms-lg-4 ms-2">

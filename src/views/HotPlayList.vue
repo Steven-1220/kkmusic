@@ -251,7 +251,7 @@ onBeforeUnmount(() => {
                     >
                       <a
                         href="#"
-                        class="link-light d-flex align-items-center stretched-link text-truncate"
+                        class="link-light d-flex align-items-center stretched-link"
                         @click.prevent="
                           playYouTubeMusic(item.name, item.album.artist.name)
                         "
@@ -260,7 +260,7 @@ onBeforeUnmount(() => {
                           {{ index + 1 }}
                         </h4>
                         <div
-                          class="hot-playlist-info d-flex align-items-center ms-lg-5 ms-3"
+                          class="hot-playlist-info w-100 d-flex align-items-center ms-lg-5 ms-3"
                         >
                           <img :src="item.album.images[0].url" />
                           <div class="ms-lg-4 ms-2">
