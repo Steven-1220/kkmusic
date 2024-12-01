@@ -83,5 +83,14 @@ defineExpose({
   width: 100%;
   margin: 0;
   max-width: 100%;
+  button {
+    i {
+      border-radius: 50%;
+      padding: 4px 6px;
+      &:hover {
+        background-color: #494755;
+      }
+    }
+  }
 }
 </style>
