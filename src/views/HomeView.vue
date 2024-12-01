@@ -17,14 +17,14 @@ import user03 from '@/assets/images/user-03.png';
 
 // Import Swiper Vue.js components
 import { Swiper, SwiperSlide } from 'swiper/vue';
-import { Navigation, Pagination } from 'swiper/modules';
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import AOS from 'aos';
 
-const modules = ref([Navigation, Pagination]);
+const modules = ref([Navigation, Pagination, Autoplay]);
 const navigation = ref({
   nextEl: '.swiper-button-next',
   prevEl: '.swiper-button-prev',
@@ -273,6 +273,11 @@ onBeforeRouteLeave(() => {
             :navigation="navigation"
             :modules="modules"
             :loop="true"
+            :autoplay="{
+              delay: 2000,
+              disableOnInteraction: false,
+              pauseOnMouseEnter: true,
+            }"
             :centeredSlides="true"
             :slidesPerView="1.2"
             :spaceBetween="20"
@@ -382,17 +387,17 @@ onBeforeRouteLeave(() => {
                   {{ index + 1 }}
                 </h4>
                 <div
-                  class="ranking-single-info d-flex align-items-center ms-lg-5 ms-3"
+                  class="ranking-single-info w-100 d-flex align-items-center ms-lg-5 ms-3"
                 >
                   <img
                     :src="item.album.artist.images[0].url"
                     :alt="item.album.artist.name"
                   />
                   <div class="ms-lg-4 ms-2">
-                    <h5 class="single-name fs-6 fs-md-5 mb-1">
+                    <h5 class="single-name fs-7 fs-md-6 mb-1">
                       {{ item.name }}
                     </h5>
-                    <h6 class="singer-name fs-7 fs-md-6">
+                    <h6 class="singer-name fs-7">
                       {{ item.album.artist.name }}
                     </h6>
                   </div>
