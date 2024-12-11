@@ -90,6 +90,13 @@ const expandMoreItems = () => {
   showItemsIndex.value += 50;
 };
 
+const backToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth',
+  });
+};
+
 // YouTube
 const youTubeData = ref({
   musicId: '',
@@ -111,6 +118,9 @@ const playYouTubeMusic = (song, singer) => {
     .then(res => {
       youTubeData.value.musicId = res.data.items[0].id.videoId;
       youTubeData.value.musicInfo = res.data.items[0].snippet;
+      nextTick(() => {
+        backToTop();
+      });
     })
     .catch(err => {
       console.log('searchYT 錯誤 :', err.response);

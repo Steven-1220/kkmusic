@@ -78,7 +78,7 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <header>
+  <header class="sticky-top">
     <nav class="navbar navbar-expand-xl bg-gray-300">
       <div class="container">
         <h1>

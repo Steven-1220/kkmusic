@@ -89,7 +89,7 @@ const playMusicTrackModal = async singleSongId => {
   nextTick(() => {
     setTimeout(() => {
       musicTrackModalRef.value.showMusicModal();
-    }, 300);
+    }, 500);
   });
 };
 

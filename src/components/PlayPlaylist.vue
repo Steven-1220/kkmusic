@@ -59,6 +59,7 @@ defineExpose({
         <div class="modal-body d-flex justify-content-md-center">
           <iframe
             v-if="props.musicPlaylistData.id"
+            :key="props.musicPlaylistData.id"
             :src="`https://widget.kkbox.com/v1/?id=${props.musicPlaylistData.id}&type=playlist&terr=TW&lang=TC&autoplay=${props.musicPlaylistData.autoplay}`"
             allow="autoplay"
             class="w-100 w-md-50 playlist"

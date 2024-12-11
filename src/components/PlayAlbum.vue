@@ -62,6 +62,7 @@ defineExpose({
         >
           <iframe
             v-if="props.musicAlbumData.id"
+            :key="props.musicAlbumData.id"
             :src="`https://widget.kkbox.com/v1/?id=${props.musicAlbumData.id}&type=album&terr=TW&lang=TC&autoplay=${props.musicAlbumData.autoplay}`"
             allow="autoplay"
             class="w-100 w-md-50"

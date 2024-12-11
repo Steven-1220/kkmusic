@@ -6,7 +6,7 @@
 
 ## 網址
 
-[https://steven-1220.github.io/kkmusic/#/](https://steven-1220.github.io/kkmusic/#/)
+[KK music](https://steven-1220.github.io/kkmusic/#/)
 
 ## 網站功能
 
@@ -21,7 +21,7 @@
 ## 使用技術
 
 - Vite
-- Vue3 Composition API
+- Vue3 Composition API 前端框架
 - Vue Router
 - Pinia
 - KKBOX OAuth 2.0 Token API
