@@ -1,1 +1,0 @@
-import{K as s}from"./index-yT-nRwf0.js";const c=s("tools",()=>({processDateExpression:t=>{const e=new Date(t);return`${e.getFullYear()}年${e.getMonth()+1}月${e.getDate()}日`},processDash:t=>t.replace(/-/g,".")}));export{c as u};
