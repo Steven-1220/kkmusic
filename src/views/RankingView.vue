@@ -51,7 +51,10 @@ const getDefaultNumbersSpecificCategoryRankingListTracks =
       )
       .then(res => {
         specificDefaultNumbersRankingTracksData.value = res.data.data;
-        hideLoadingEffect();
+        nextTick(() => {
+          backToTop();
+          hideLoadingEffect();
+        });
       });
   };
 
@@ -113,6 +116,13 @@ const handleBrowserChangePage = () => {
   if (isMusicPlaying.value) {
     musicTrackModalRef.value.closeMusicModal();
   }
+};
+
+const backToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth',
+  });
 };
 
 onMounted(async () => {

@@ -30,8 +30,6 @@ export const useBaseSet = defineStore('baseSet', () => {
         config.value,
       );
 
-      console.log('getConfigAuthToken success', res);
-
       configAuth = {
         headers: {
           Authorization: `Bearer ${res.data.access_token}`,
