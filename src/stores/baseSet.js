@@ -18,8 +18,7 @@ export const useBaseSet = defineStore('baseSet', () => {
     client_secret: import.meta.env.VITE_API_CLIENTSECRET,
   });
 
-  const corsProxy = 'https://corsproxy.io/?';
-  const apiUrl = `${corsProxy}https://account.kkbox.com/oauth2/token`;
+  const apiUrl = import.meta.env.VITE_API_AUTH;
 
   const getConfigAuthToken = async () => {
     try {

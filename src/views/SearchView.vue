@@ -59,11 +59,15 @@ const restrictNum = ref({
   playlists: [],
   tracks: [],
 });
+
 const getSearch = keyWord => {
   showLoadingEffect();
+
+  // 使用 encodeURIComponent 確保關鍵字（如中文或空格）不會弄壞網址
+  const encodedKeyWord = encodeURIComponent(keyWord);
   axios
     .get(
-      `${import.meta.env.VITE_BASE_API_URL}/search?q=${keyWord}&territory=TW&type=artist,track,album,playlist&limit=24 `,
+      `${import.meta.env.VITE_BASE_API_URL}/search?q=${encodedKeyWord}&territory=TW&type=artist,track,album,playlist&limit=24`,
       generalConfig.value,
     )
     .then(res => {
